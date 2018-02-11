@@ -20,7 +20,7 @@ variable "availability_zones" {
 }
 
 variable "bucket_name" {
-  default = "static-website-13948204"
+  default = "static-website-13948204-new"
 }
 
 variable "vpc_cidr" {
