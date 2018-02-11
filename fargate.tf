@@ -9,6 +9,7 @@ module "fargate" {
   task_role              = "${module.roles.ecs_task_role_arn}"
   ecs_service_role_arn   = "${module.roles.ecs_service_role_arn}"
   ecs_service_role_name  = "${module.roles.ecs_service_role_name}"
+  ecs_autoscale_role_arn = "${module.roles.ecs_autoscale_role_arn}"
   tag                    = "latest"
 }
 

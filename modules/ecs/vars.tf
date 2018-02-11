@@ -36,6 +36,8 @@ variable "subnets_public" {
   type = "list"
 }
 
+variable "ecs_autoscale_role_arn" {}
+
 variable "file" {
   default = "script.sh"
 }
