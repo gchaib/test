@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+version="latest"
+
+printf "\n Building docker image"
+docker build -q -t ${service_name} .
+
+docker_login=`aws ecr get-login --no-include-email --region us-east-1`
+echo `$docker_login`
+
+echo "Pushing docker image to AWS ECR"
+docker tag ${service_name}:latest ${account_id}.dkr.ecr.us-east-1.amazonaws.com/${service_name}:$version
+docker push ${account_id}.dkr.ecr.us-east-1.amazonaws.com/${service_name}:$version
+
+echo "Removing local images"
+docker rmi -f "$(docker images -q)"
+
+echo "Running new task"
+aws ecs run-task --launch-type FARGATE --cluster ${service_name} --task-definition ${service_name}-latest --network-configuration "awsvpcConfiguration={subnets=[${subnet}],securityGroups=[${sg}]}"
