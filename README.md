@@ -126,7 +126,7 @@ First steps:
 
 > Warning(2): The dev branch takes a long time to conclude and sometimes occurs timeout while executing terraform apply. If this is the case re-run terraform apply!
 
-> Warning(3): There is a now bug in terraform that results in this output when finishing the execution of the dev branch. The work around (encouraged by terraform's developers) to solve this problem is re-run terraform apply if it happens. Output: 
+> Warning(3): There is a know bug in terraform that results in this output when finishing the execution of the dev branch. The work around (encouraged by terraform's developers) to solve this problem is re-run terraform apply if it happens. Output: 
 		
 		Error: Error applying plan:
 
