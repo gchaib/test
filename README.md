@@ -199,8 +199,7 @@ After completing the initial setup you can start to run the code! **Run the foll
 		commands will detect it and remind you to do so if necessary.
  
 2. `terraform plan`
-		The command will ask for confirmation after showing the structure modifications it will do. Confirm if it is right!
-					Sample Output:
+		Sample Output:
 	```
 	An execution plan has been generated and is shown below.
 	Resource actions are indicated with the following symbols:
