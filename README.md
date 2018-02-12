@@ -2,12 +2,22 @@
 
 Two primary modules are created in the scope of this project. The first one creates an s3 bucket serving a static website while a cloudfront distribution is reponsible for making the website scalable and accessible worldwide. The other create the infrastructure of a docker container service in AWS. It uses fargate launch type, which provides easiness in deploy docker applications without worrying about hosts infrastructure.
 
+### Prerequisites
+
+This project requires the following:
+
+* docker >= 17.12.0-ce
+* terraform >= 0.11.3
+* awscli >= 1.14.36
+* python >= 2.7.13
+* AWS account.
+
 ## Getting Started
 
 First steps:
 
 - Clone this repository to your local machine.
-- Install the following: docker, awscli, terraform, and python. Make sure the versions is compatible with the ones describe the prequisites above.
+- Install the following: docker, awscli, terraform, and python. Make sure the versions is compatible with the ones describe in the prequisites above.
 - Configure aws-cli. Since this project uses a remove terrafor backend (s3) to store infrastructure state, this step is necessary.
 
 ```
@@ -19,19 +29,9 @@ Default region name [us-east-1]: us-east-1
 Default output format [json]: json
 
 ```
-
-### Prerequisites
-
-This project was tested and developed with the following software and versions:
-
-* docker >= 17.12.0-ce
-* terraform >= 0.11.3
-* awscli >= 1.14.36
-* python >= 2.7.13
-
-```
-Give examples
-```
+- Configure s3 backend
+** if
+- Configure terraform.tfvars. In this file you will write your aws credentials
 
 ### Installing
 
