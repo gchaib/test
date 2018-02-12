@@ -166,7 +166,7 @@ After completing the initial setup you can start to run the code! **Run the foll
 **Run terraform apply with sudo privileges (e.g. sudo terraform apply).**
 
 1. `terraform init`
-1.1 Sample output:
+    Sample output:
 
 		Initializing modules...
 			- module.fargate
