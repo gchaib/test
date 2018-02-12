@@ -24,5 +24,5 @@ variable "bucket_name" {
 }
 
 variable "vpc_cidr" {
-  default = "10.20.0.0/16"
+  default = "10.30.0.0/16"
 }

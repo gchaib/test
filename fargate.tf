@@ -1,5 +1,5 @@
 module "fargate" {
-  service_name           = "fargate"
+  service_name           = "fargate-new"
   source                 = "modules/ecs"
   number_of_tasks        = "2"
   subnets                = ["${module.network.private_subnets_id}"]

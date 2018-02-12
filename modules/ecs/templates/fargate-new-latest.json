@@ -1,0 +1,26 @@
+[
+    {
+      "memory": 420,
+      "networkMode": "awsvpc",
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "name": "${service_name}",
+      "environment": [
+		     ], 
+      "image": "${env}.dkr.ecr.us-east-1.amazonaws.com/${service_name}:${tag}",
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "${log_group}",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "${service_name}"
+        }
+      }
+    }
+  ]
+
