@@ -163,7 +163,7 @@ First steps:
 ## Deploying
 After completing the initial setup you can start to run the code! **Run the following commands in the order they appear!**
 
-** Run terraform apply with sudo privileges (e.g. sudo terraform apply). **
+**Run terraform apply with sudo privileges (e.g. sudo terraform apply).**
 
 1. `terraform init`
 1.1 Sample output:
