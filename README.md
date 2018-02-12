@@ -114,7 +114,7 @@ First steps:
  7. You are all set! 
 ## (branch) Master vs Dev ##
 
-  1. ####  Master branch is related with first part of the test. Go to next topic (Deployment)! After finishing this step checkout to dev branch and start from deploying topic!
+  1. ####  Master branch is related with first part of the test. Go to next topic (Deployment)! After finishing this step checkout to dev branch and read the next topic!
   2. ####  Dev branch is related with first part of the test. 
 	  *  This branch has the following modifications:
 		  * Bucket name in vars.tf;
