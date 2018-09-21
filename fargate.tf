@@ -2,10 +2,10 @@ module "fargate" {
   service_name           = "fargate"
   source                 = "modules/ecs"
   number_of_tasks        = "2"
-  subnets                = ["${module.network.private_subnets_id}"]
-  subnets_public         = ["${module.network.public_subnets_id}"]
-  env_id                 = "${var.env_id}"
-  vpc_id                 = "${module.network.vpc_id}"
+  subnets                = [""]
+  subnets_public         = [""]
+  env_id                 = ""
+  vpc_id                 = ""
   task_role              = "${module.roles.ecs_task_role_arn}"
   ecs_service_role_arn   = "${module.roles.ecs_service_role_arn}"
   ecs_service_role_name  = "${module.roles.ecs_service_role_name}"
